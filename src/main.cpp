@@ -1,12 +1,12 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
-#include "Automovil.h"
-#include "Semaforo.h"
-#include "Conductor.h"
+#include "include/Semaforo.h"
+#include "include/Conductor.h"
+#include "include/Automovil.h"
 
 int main() {
-    using namespace Vehiuclos;
+    using namespace Vehiculos;
     using namespace ControlVial;
 
     Automovil auto1("Auto de Ana");
@@ -16,8 +16,8 @@ int main() {
     Conductor conductor2("Beto", &auto2);
 
     Semaforo semaforo;
-    semaforo.agregarConductor(&conductorAna);
-    semaforo.agregarConductor(&conductorBeto);
+    semaforo.agregarConductor(&conductor);
+    semaforo.agregarConductor(&conductor2);
 
     int duraciones[3] = {15, 5, 25};
     int indiceDuracion = 0;
