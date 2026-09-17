@@ -1,9 +1,9 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
-#include "include/Semaforo.h"
-#include "include/Conductor.h"
-#include "include/Automovil.h"
+#include "Semaforo.h"
+#include "Conductor.h"
+#include "Automovil.h"
 
 int main() {
     using namespace Vehiculos;

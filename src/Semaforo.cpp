@@ -24,16 +24,16 @@ namespace ControlVial{
 
         std::cout << "\n>>> El semaforo cambio de estado\n";
         notificarConductores();
-        }
+    }
 
-        void Semaforo::notificarConductores(){
+    void Semaforo::notificarConductores(){
             for(Conductor* c : conductores){
                 c -> reaccionar(*actual);
             }
-        }
+    }
 
         EstadoSemaforo Semaforo::getColorActual() const{
             return *actual;
-        }
     }
+}
 }

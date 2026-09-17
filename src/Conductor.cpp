@@ -1,7 +1,7 @@
 #include "Conductor.h"
 #include <iostream>
 
-Conductor::Conductor(const std::string& nombre, Vehiuclos::Automovil* auto_) : nombre(nombre), miAuto(auto_) {}
+Conductor::Conductor(const std::string& nombre, Vehiculos::Automovil* auto_) : nombre(nombre), miAuto(auto_) {}
 
 void Conductor::reaccionar(ControlVial::EstadoSemaforo estado) {
     using ControlVial::EstadoSemaforo;

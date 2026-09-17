@@ -1,7 +1,7 @@
 #include "Automovil.h"
 #include <iostream>
 
-namespace Vehiculos{
+namespace Vehiculos {
 
     Automovil::Automovil(const std::string& nombre) : nombre(nombre), velocidad(0) {}
 
@@ -17,14 +17,14 @@ namespace Vehiculos{
 
     }
 
-    std::string Automovil(){
+    void Automovil::detener(){
         velocidad = 0;
-        std::cout << "[Auto] " << nombre << "se detiene\n";
+        std::cout << "[Auto] " << nombre << " se detiene\n";
 
     }
 
     std::string Automovil::getNombre() const{
         return nombre; }
-        int Automovil::getVelocidad() const { return valocidad;}
+        int Automovil::getVelocidad() const { return velocidad; }
 
     }
