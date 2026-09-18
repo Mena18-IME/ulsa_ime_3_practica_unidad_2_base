@@ -35,8 +35,6 @@ int main() {
             segundosTranscurridos = 0;
         }
     }
-    
+
     return 0;
 }
-
-CXXFLAGS = -std=c++17 -Wall -Iinclude
