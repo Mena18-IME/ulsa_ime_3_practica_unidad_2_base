@@ -3,12 +3,12 @@
 #include "Automovil.h"
 #include "EstadoSemaforo.h"
 
-class Conductor{
-    private:
+class Conductor {
+private:
     std::string nombre;
     Vehiculos::Automovil* miAuto;
 
-    public:
+public:
     Conductor(const std::string& nombre, Vehiculos::Automovil* auto_);
 
     void reaccionar(ControlVial::EstadoSemaforo estado);

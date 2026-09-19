@@ -2,23 +2,24 @@
 #include <vector>
 #include "EstadoSemaforo.h"
 
-class Conductor;
+class Conductor; // declaración adelantada — ver nota técnica
 
-namespace ControlVial{
+namespace ControlVial {
 
-    class Semaforo{
-        private:
+    class Semaforo {
+    private:
         EstadoSemaforo estados[3];
         EstadoSemaforo* actual;
         std::vector<Conductor*> conductores;
 
         void notificarConductores();
 
-        public:
+    public:
         Semaforo();
-        
+
         void agregarConductor(Conductor* c);
         void cambiarEstado();
         EstadoSemaforo getColorActual() const;
     };
+
 }

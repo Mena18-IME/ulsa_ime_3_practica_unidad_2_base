@@ -1,14 +1,14 @@
 #pragma once
 #include <string>
 
-namespace Vehiculos{
+namespace Vehiculos {
 
-    class Automovil{
-        private:
+    class Automovil {
+    private:
         std::string nombre;
         int velocidad;
 
-        public:
+    public:
         explicit Automovil(const std::string& nombre);
 
         void arrancar();
@@ -18,4 +18,5 @@ namespace Vehiculos{
         std::string getNombre() const;
         int getVelocidad() const;
     };
+
 }

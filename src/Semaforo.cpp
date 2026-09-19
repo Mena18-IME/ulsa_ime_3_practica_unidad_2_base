@@ -8,7 +8,7 @@ namespace ControlVial {
         estados[0] = EstadoSemaforo::Verde;
         estados[1] = EstadoSemaforo::Amarillo;
         estados[2] = EstadoSemaforo::Rojo;
-        actual = &estados[0];
+        actual = &estados[0]; // arranca en Verde
     }
 
     void Semaforo::agregarConductor(Conductor* c) {
@@ -17,12 +17,12 @@ namespace ControlVial {
 
     void Semaforo::cambiarEstado() {
         if (actual == &estados[2]) {
-            actual = &estados[0];
+            actual = &estados[0]; // de Rojo regresa a Verde
         } else {
-            ++actual;
+            ++actual; // avanza al siguiente estado del arreglo
         }
 
-        std::cout << "\n>>> El semaforo cambio de estado\n";
+        std::cout << "\n>>> El semaforo cambio de estado <<<\n";
         notificarConductores();
     }
 
